@@ -4,12 +4,12 @@
 	<div class="container">
 		<form action="" method="POST">
 			{% csrf_token %}
-			{{form}}
-			<label for="CategoryInput">Expense Category</label>
-			<input type="text" id="CategoryInput" name="CategoryInput">
-			<input type="hidden" id="CategoriesString">
-			<ul id="CategoriesContainer">
-				</ul>
+			{{ form }}
+			<label for="categoryInput">Expense Categores (hit enter after every category)</label>
+			<input type="text" name="categoryInput" id="categoryInput">
+			<input type="hidden" name="categoriesString">
+			<ul id="categoriesContainer">
+			</ul>
 			<button type="submit" class="btn">Start Project</button>
 		</form>
 	</div>
